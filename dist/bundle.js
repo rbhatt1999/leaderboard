@@ -116,7 +116,17 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n\r\n\r\n\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _modules_display_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/display.js */ \"./src/modules/display.js\");\n\r\n\r\n\r\nconst scoreList = [\r\n  {\r\n    name:'rohit',\r\n    score:45,\r\n  },\r\n  {\r\n    name:'Rajesh',\r\n    score:70,\r\n  },\r\n  {\r\n    name:'Montu',\r\n    score:65,\r\n  },\r\n  {\r\n    name:'Gopi',\r\n    score:48,\r\n  },\r\n];\r\n\r\n(0,_modules_display_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(scoreList);\r\n\r\n\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/display.js":
+/*!********************************!*\
+  !*** ./src/modules/display.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((arr) => {\r\n  const scoreListContainer = document.querySelector('.score-list');\r\n  arr.forEach((item,index) => {\r\n    const li = document.createElement('li');\r\n    li.innerHTML = `${item.name}: ${item.score}`\r\n    scoreListContainer.appendChild(li);    \r\n  });\r\n});\n\n//# sourceURL=webpack://leaderboard/./src/modules/display.js?");
 
 /***/ })
 
