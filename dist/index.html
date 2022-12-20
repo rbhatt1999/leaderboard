@@ -7,6 +7,27 @@
   <title>Leaderboard</title>
 <script defer src="bundle.js"></script></head>
 <body>
-  
+  <main>
+    <header>
+      <h1>Leaderboard</h1>
+    </header>
+    <section class="wapper">
+      <div class="score-wapper">
+        <div class="score-headline">
+          <h2>Recent scores</h2>
+          <button class="refesh btn">Refesh</button>
+        </div>
+        <ul class="score-list"></ul>
+      </div>
+      <div>
+        <h2>Add your score</h2>
+        <form action="#">
+          <input type="text" name="name" id="name">
+          <input type="number" name="score" id="score">
+          <button class="submit-score btn">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
