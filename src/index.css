@@ -106,15 +106,30 @@ header h1 {
 
 .submit-score {
   align-self: center;
-  width: 50%;
-  height: 40px;
+  width: 30%;
+  height: 35px;
 }
 
 .score-form input {
-  height: 20px;
+  height: 30px;
   border: 3px solid black;
 }
 
 .score-form input::placeholder {
   color: black;
+}
+
+@media (max-width: 680px) {
+  .wapper {
+    flex-direction: column;
+    margin: 20px 10px 0 10px;
+  }
+
+  header h1 {
+    font-size: 150%;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
 }
