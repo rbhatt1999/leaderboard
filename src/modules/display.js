@@ -1,8 +1,9 @@
 export default (arr) => {
   const scoreListContainer = document.querySelector('.score-list');
-  arr.forEach((item) => {
+  scoreListContainer.innerHTML = '';
+  arr.result.forEach((item) => {
     const li = document.createElement('li');
-    li.innerHTML = `${item.name}: ${item.score}`;
+    li.innerHTML = `${item.user}: ${item.score}`;
     scoreListContainer.appendChild(li);
   });
 };
