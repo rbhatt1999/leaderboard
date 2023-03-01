@@ -7,24 +7,35 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 80vh;
+  background-image: url(./images/background-1.jpg);
 }
 
 main {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  width: 50%;
+  height: 100vh;
+  background-color: rgba(143, 215, 199, 0.7);
+}
+
+header {
+  align-self: center;
+  text-align: center;
+  background-color: rgba(252, 146, 196, 0.7);
+  border: 2px solid rgba(143, 215, 199, 0.7);
+  border-radius: 100px;
+  margin-top: 20px;
+}
+
+header h1 {
+  margin: 20px;
+  font-size: 300%;
 }
 
 .wapper {
   display: flex;
   gap: 60px;
-  margin: 50px 0 0 0;
+  margin: 50px 50px 50px 50px;
 }
 
 .score-wapper {
@@ -75,6 +86,11 @@ main {
   border: 1px solid rgb(221, 221, 221);
 }
 
+.score-list li:nth-child(even) {
+  background-color: white;
+  border: 1px solid white;
+}
+
 .score-input-wrapper {
   flex: 1;
   display: flex;
@@ -86,18 +102,34 @@ main {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  max-width: 250px;
 }
 
 .submit-score {
-  align-self: flex-end;
+  align-self: center;
+  width: 30%;
+  height: 35px;
 }
 
 .score-form input {
-  height: 20px;
+  height: 30px;
   border: 3px solid black;
 }
 
 .score-form input::placeholder {
   color: black;
+}
+
+@media (max-width: 680px) {
+  .wapper {
+    flex-direction: column;
+    margin: 20px 10px 0 10px;
+  }
+
+  header h1 {
+    font-size: 150%;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
 }
